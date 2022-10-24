@@ -14,7 +14,7 @@ LOGIN_PAYLOAD = """{{
     "password": "{1}",
     "capp": "meg",
     "goto": "https://sofa-connexion.grdf.fr:443/openam/oauth2/externeGrdf/authorize?response_type=code&scope=openid%20profile%20email%20infotravaux%20%2Fv1%2Faccreditation%20%2Fv1%2Faccreditations%20%2Fdigiconso%2Fv1%20%2Fdigiconso%2Fv1%2Fconsommations%20new_meg&client_id=prod_espaceclient&state=0&redirect_uri=https%3A%2F%2Fmonespace.grdf.fr%2F_codexch&nonce=skywsNPCVa-AeKo1Rps0HjMVRNbUqA46j7XYA4tImeI&by_pass_okta=1&capp=meg"}}"""
-DATA_URL = "https://monespace.grdf.fr/api/e-conso/pce/consommation/informatives/telecharger?dateDebut={1}&dateFin={2}&frequence={0}&pceList%5B%5D={3}"
+DATA_URL = "https://monespace.grdf.fr/api/e-conso/pce/consommation/publiees/telecharger?dateDebut={1}&dateFin={2}&frequence={0}&pceList%5B%5D={3}"
 DATA_FILENAME = 'Donnees_informatives_*.xlsx'
 
 DEFAULT_TMP_DIRECTORY = '/tmp'
